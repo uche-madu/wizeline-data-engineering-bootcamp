@@ -56,7 +56,29 @@ variable "disable_dependent_services" {
   type = bool
 }
 
-# variable "gcp_services" {
-#   type        = list(any)
-#   description = "GCP services to enable"
-# }
+# Helm Airflow
+variable "airflow_helm_version" {
+  type = string
+}
+
+# Cloud SQL
+variable "instance_name" {
+  description = "Name for the sql instance database"
+  type        = string
+}
+variable "db_tier" {
+  type    = string
+  default = "db-f1-micro"
+}
+variable "airflow_database" {
+  type = string
+}
+
+variable "db_user" {
+  type = string
+}
+
+variable "db_disk_size_gb" {
+  description = "Size of the disk in the sql instance"
+  type        = number
+}
