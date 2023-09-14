@@ -20,9 +20,6 @@ The following steps assume that a Google Cloud project has been created, Google 
     - Check `allow write access`
     - Click Add key.
 
-3. Set an environment variable for the private key: 
-    `export TF_VAR_airflow_gitSshKey=$(base64 ~/airflow-ssh-key | tr -d '\n')`
-
 ### Apply the config:
 * Enter the terraform directory `cd terraform` 
 * Run: 

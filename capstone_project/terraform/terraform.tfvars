@@ -20,7 +20,7 @@ disable_services_on_destroy = false
 disable_dependent_services  = false
 
 # Helm Airflow
-airflow_version                = "2.7.1"
+airflow_helm_version = "1.10.0"
 
 # Cloud SQL
 db_tier          = "db-f1-micro"
